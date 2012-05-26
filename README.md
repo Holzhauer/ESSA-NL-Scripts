@@ -7,8 +7,7 @@ The European Social Simulation Association ([http://essa.eu.org/](http://essa.eu
 
 Previous releases are available for the members at the ESSA Site after logging in:
 
-	http://www.essa.eu.org/newsletter
-
+[http://www.essa.eu.org/newsletter](http://www.essa.eu.org/newsletter)
 
 To submitt content for the next issue, use the google forms that allow everyone to enter in information about conferences, publications, job offers, and news, which helps us saving a lot of effort and ensures that the right information is at the right place. Do not forget to leave a name and email address in the "Other" field when you submit content:
 

@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript">
+	function applyRegexp() {
+		var re = new RegExp(regexpString.value, "gm");
+		dataOutput.value = dataInput.value.replace(re, replaceString.value);
+	}
+
+	function capitalizeFirstLetter(string)
+	{
+	    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+	}
+</script>
+</head>
+<body>
+	<h1>Apply regexp</h1>
+	<input type="text" id="regexpString" />
+	<input type="text" id="replaceString" />
+	<button onclick="applyRegexp()">Process</button>
+	<button onclick="dataInput.value=''; dataOutput.value='';">Clear</button>
+	<button
+		onclick="dataOutput.value = dataInput.value.replace(/\r/g, '').replace(/\n/g, '')">Join
+		lines</button>
+	<button
+		onclick="dataOutput.value = dataInput.value.replace(/^ +/gm, '')">Trim</button>
+	<button
+		onclick="dataOutput.value = dataInput.value.replace(/\r/g, '').replace(/\n\n/g, '\n')">Delete
+		empty lines</button>
+	<button
+		onclick="dataInput.value = dataOutput.value; dataOutput.value=''">&lt;-</button>
+	<br />
+	<table>
+		<tr>
+			<td><textarea id="dataInput" rows="15" cols="60"></textarea></td>
+			<td><textarea id="dataOutput" rows="15" cols="60"
+					readonly="readonly"></textarea></td>
+		</tr>
+	</table>
+
+	<p>
+	<input type="text" id="capitalizeString" />
+	<input type="text" id="capitalizeResultString" />
+	<button onclick="capitalizeResultString.value=capitalizeFirstLetter( capitalizeString.value )">Capitalize</button>
+	</p>
+</body>
+</html>
+

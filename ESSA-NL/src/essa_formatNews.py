@@ -42,7 +42,7 @@ def format(outputFile, issue, workingDir, user, password, debug, chapNum):
     for row in reader:
         if (debug == 1):
             print row
-        file_str.write('<tr><td><a href="#toc_job">TOC</a></td><td class="con-title"><a name="new_' + str(len(headerList) + 1) + '">' + convert(row["Title"]) + "</a></td></tr>")
+        file_str.write('<tr><td><a href="#toc_new">TOC</a></td><td class="con-title"><a name="new_' + str(len(headerList) + 1) + '">' + convert(row["Title"]) + "</a></td></tr>")
         headerList.append(convert(row["Title"]))
         processTaggs(file_str, convert(row["Taggs"]))   
         file_str.write('<tr class="odd"><td>' + "Content" + "</td><td>" + convert(row["Content"])  + "</td></tr>")

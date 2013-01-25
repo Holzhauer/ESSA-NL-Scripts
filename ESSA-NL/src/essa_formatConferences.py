@@ -48,7 +48,7 @@ def format(outputFile, issue, workingDir, user, password, debug, chapNum):
         else:
             shortTitle = ""
         headerList.append(shortTitle + convert(row["Conference Title"]))
-        file_str.write('<tr><td><a href="#toc_con">TOC</a></td><td class="con-title"><a name="con_' + str(len(headerList) + 1) + '">' + shortTitle + convert(row["Conference Title"]) + "</a></td></tr>\n")
+        file_str.write('<tr><td><a href="#toc_con">TOC</a></td><td class="con-title"><a name="con_' + str(len(headerList)) + '">' + shortTitle + convert(row["Conference Title"]) + "</a></td></tr>\n")
         processTaggs(file_str, convert(row["Taggs"]))
         file_str.write('<tr class="odd"><td>' + 'Date</td><td>' + convert(row["Date"]) + "</td></tr>\n")
         file_str.write('<tr><td>Place</td><td>' + convert(row["Place"]) + "</td></tr>\n")

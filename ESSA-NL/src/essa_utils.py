@@ -73,7 +73,7 @@ def downloadGoogleSpradsheet(partName, issue, workingDir, user, password):
     gd_client.SetClientLoginToken(spreadsheets_client.GetClientLoginToken())
 
     file_path = workingDir + issue + "/ESSA_NL_" + partName + ".csv"
-    print 'Downloading spreadsheet to %s...' % (file_path,)
+    print( 'Downloading spreadsheet to %s...' % (file_path,) )
     gd_client.Export(feed.entry[0], file_path)
     gd_client.SetClientLoginToken(docs_auth_token) # reset the DocList auth token
 

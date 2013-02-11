@@ -9,7 +9,8 @@ History:  2011-04-11  (TOC, sorting, google download)
 
 import csv
 from operator import itemgetter
-from cStringIO import StringIO
+#from cStringIO import StringIO
+from io import StringIO
  
 from essa_utils import *
 
@@ -39,7 +40,7 @@ def format(outputFile, issue, workingDir, user, password, debug, chapNum):
 
     for row in reader:
         if (debug == 1):
-            print row
+            print( row )
         file_str.write("<tr>")
         file_str.write('<tr><td><a href="#toc_job">TOC</a></td><td class="con-title"><a name="job_' + str(len(headerList) + 1) + '">' + convert(row["Job Type"]) + ": " + convert(row["Title"]) + "</a></td></tr>")
         processTaggs(file_str, convert(row["Taggs"]))

@@ -97,7 +97,7 @@ d = IssueDialog(root)
 
 if (issue != ""):
 
-    print "Processing issue", issue
+    print ("Processing issue", issue)
     
     # create working dir if not existing:
     if not os.path.exists(workingDir):
@@ -147,4 +147,4 @@ if (issue != ""):
         input = input =  infile.readline()
     
     outFile.close()
-    print "Issue", issue, "done."
+    print ("Issue", issue, "done.")

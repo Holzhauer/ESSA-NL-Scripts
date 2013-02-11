@@ -5,16 +5,17 @@ Parses config file
 @date:    22.06.2011
 '''
 
-import ConfigParser
+#import ConfigParser
+import configparser
 import os.path
 
 configFile = './config/essanl.config'
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.read([configFile])
 
 
 if not os.path.isfile(configFile):
-    print "File " + configFile + " not found!"
+    print("File " + configFile + " not found!")
 
 
 workingDir = config.get("basic","destination")

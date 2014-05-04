@@ -1,0 +1,211 @@
+<style media="screen" type="text/css">
+body {
+	font: "Arial", "Helvetica", sans-serif;
+	font-size: 14px;
+	line-height: 1.3em;
+	background-color: #F5F5F5;
+	color: #333333;
+	margin: 10;
+	padding: 10;
+}
+
+table {
+	font-size: 100%;
+}
+
+a {
+	color: #003399;
+	background-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #484848;
+	font: normal normal 700 19.6px/32px Arial;
+	margin: 0.75em 0 0.25em 0;
+}
+
+h1 {
+	font-size: 160%;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h3 {
+	font-size: 125%;
+	border-bottom: none;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 110%;
+	border-bottom: none;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 100%;
+	border-bottom: none;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: 85%;
+	border-bottom: none;
+	font-weight: bold;
+}
+
+td {
+ 	padding: 3;
+}
+ 	
+td.con-title {
+	font-weight: bold;
+	padding: 3;
+}
+
+tr.odd {
+	background-color: #B0C4DE;
+}
+
+.policy {
+	background-color: #ffa500;
+	color: White;
+}
+
+.marketDynamics {
+	background-color: #74ae0b;
+	color: White;
+}
+
+.reputation {
+	background-color: #8cacbb;
+	color: White;
+}
+
+.socialConflict {
+	background-color: #ff0000;
+	color: White;
+}
+
+.socialNetworks {
+	background-color: #316ac5;
+	color: White;
+}
+
+.socientalTransition {
+	background-color: #800080;
+	color: White;
+}
+
+.ABMtechnical {
+	background-color: #808080;
+	color: White;
+}
+
+.ABMmethodical {
+	background-color: #578308;
+	color: White;
+}
+
+.alert {
+	background-color: #001155;
+	color: #DDDDDD;
+        padding: 5;
+} 
+
+.alert h1 {
+	margin: 0 0 0 0;
+	color: #DDDDDD;
+}
+
+.alert a {
+	color: #33C933;
+}
+</style>
+<p>This newsletter is distributed only to members of the European
+Social Simulation Association for their own use. Please do not
+distribute further. To join ESSA, register at: <a
+	href="http://essa.eu.org">http://essa.eu.org</a></p>
+
+<table class="alert">
+  <tr>
+    <td>
+<h1>New structure for Special Interest Groups</h1>
+
+<p>
+The ESSA MC today approved a new structure for Special Interest Groups. It is below. To start this new regime off, there will be a "clear out" of present SIGS, except those that declare themselves to be active. So if you are a SIG organiser/member and wish to claim your SIG is active email me (<a href="mailto:bruce@edmonds.name?subject=ESSA%20SIG">bruce@edmonds.name</a>). Also if you are interested in forming a new SIG email me. 
+</p>
+
+<p>
+Thanks! 
+</p>
+
+<p>
+<b>Principles:</b> That SIGS should be able to form with the minimum of initial scrutiny (to allow the formation of new groups rapidly and in response to new trends and problems), but once formed, after a year, are expected to uphold certain standards in return for certain rights and facilities. If they do not meet these standards are liable to being "de-listed" as a SIG by the ESSA MC. A certain turnover in SIGs is to be expected. 
+</p>
+
+<p>
+<b>Formation:</b> SIGS can be formed if 10 of ESSA members declare their interest, including an organiser, who is responsible for reporting to the ESSA MC. The list of initial members, a title, and a short half page description is to be supplied to the ESSA MC, which will normally approve the SIG unless there is a good reason to reject it. The SIG then has a year to form and organise itself. 
+</p>
+
+<p>
+<b>Duties:</b> SIGS have to meet at least once every two years (e.g. at the ESSA Conference). The named organiser needs to be willing to reply to requests for interest/information about the SIG and keep a list of those interested. Each SIG should maintain a Blog for reports of their activities, discussion, paper announcements etc. This Blog's URL should be reported to those responsible for the ESSA website. The Blog should be run in a free manner to allow all its members to reasonably contribute. The organiser and members are under a duty to not bring ESSA into disrepute in any way (e.g. by allowing it to be a means of expressing personal disputes, allow spam on its Blog etc.). The Blog and other activities should be clearly associated with ESSA using its logo where appropriate linked back to the ESSA website. 
+</p>
+
+<p>
+<b>Organisers:</b> The named organiser is responsible for the good maintenance of the SIG to the ESSA MC, but not in any way to control/exclude any reasonable academic discussion within the SIG. If the organiser needs to step down, or no longer has the time to do the job, a replacement from the members needs to be found, information passed on to the replacement (e.g. Blog editor rights, list of SIG members etc) and the name and contact email of the new organiser passed to the ESSA MC. If consensus is not possible, decisions within a SIG may be made by a vote of over half its listed members voting for the decision. 
+</p>
+
+<p>
+<b>Oversight:</b> The ESSA MC has ultimate authority to settle any internal disputes, if necessary to replace the organiser but only in exceptional circumstances without consultation and agreement with SIG members. Once a year the ESSA MC will review the activity of all SIGS via their Blogs (and other sources) and if necessary give notice to a SIG that it may be delisted. If, at the next yearly review, it is still judged to be moribund, it will be de-listed as a SIG. 
+</p>
+
+<p>
+<b>Rights:</b> ESSA SIGS are eligible to apply to the MC for financial support for SIG activities, to be linked from the ESSA website, to have time/space at ESSA conferences for a meeting (though not necessarily during the main/daytime sessions) and to use the ESSA brand/logo.
+</p>
+    </td>
+  </tr>
+</table>
+
+<h1><a name="content">Content</a></h1>
+<ol>
+	<li><a href="#1">Preface from the new editors</a></li>
+	<li><a href="#sig">Special Interest Groups</a></li>
+	<!-- <li><a href="#imp">Important</a></li> -->
+	<li><a href="#toc_new">News</a></li>
+	<li><a href="#toc_pub">Publications</a></li>
+	<li><a href="#toc_job">Job Offers</a></li>
+	<li><a href="#toc_con">Calls for Papers or Proposals for Conferences, Meetings, Symposia, and Journals</a></li>
+	<li><a href="#toc_att">Calls for Attendance for Conferences, Workshops, Meetings and Symposia</a></li>
+</ol>
+
+<h1><a name="1">1. Preface from the editors</a></h1>
+<p>Welcome to the new issue of the ESSA newsletter.</p>
+<p>To submit content for the next issue, use the google forms that allow everyone to enter in information about conferences,
+publications, job offers, and news, which helps us saving a lot of effort and ensures that the right information is at the right place. Do
+not forget to leave a name and email address in the "Other" field when
+you submit content:</p>
+<ul>
+	<li><a
+		href="https://spreadsheets.google.com/viewform?formkey=dEJRRkF1ZGJXWHVvSXlpQTg5QUoxQXc6MQ"
+		target="_blank">Calls for Papers or Proposals for Conferences, Meetings, Symposia, and Journals</a></li>
+	<li><a
+		href="https://spreadsheets.google.com/viewform?hl=en&hl=en&formkey=dFdmLW9panBaTDN2MWdXR0RFQVhVM0E6MQ#gid=0"
+		target="_blank">Calls for Attendance for Conferences, Workshops, Meetings and Symposia</a></li>
+	<li><a
+		href="https://spreadsheets.google.com/viewform?hl=en&formkey=dGh2Sk9EcW16eUxPU3gtQUtkWkhrY1E6MQ#gid=0"
+		target="_blank">Job Offers</a></li>
+	<li><a
+		href="https://spreadsheets.google.com/viewform?formkey=dHY1Z1AyTFZWZFNSbmx5YThNNDltbXc6MQ"
+		target="_blank">Publications</a></li>
+	<li><a
+		href="https://spreadsheets.google.com/viewform?hl=en&formkey=dGFzdlcteHhOWGlqaXVKUEtOWkx0UVE6MQ#gid=0"
+		target="_blank">News</a></li>
+</ul>
+<p>Alternatively, bookmark the <a
+		href="http://essa.eu.org/newsletter-contributions" target="_blank">Newsletter Contributions page</a> in order to easily
+access the forms for content submission.</p>
+
+<p>Richard and Ozge</p>

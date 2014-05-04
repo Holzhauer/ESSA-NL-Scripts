@@ -1,2 +1,8 @@
 # Compiled Python binaries
 *.pyc
+
+ESSA-NL/src/Loggings/essa-nl.log
+
+ESSA-NL/src/26*
+
+ESSA-NL/src/27*

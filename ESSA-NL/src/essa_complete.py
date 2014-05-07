@@ -15,7 +15,7 @@ import essa_formatNews
 import essa_formatPublications
 import essa_formatConferences
 import essa_formatConferencesAttendance
-import essa_clipboardDateConvert
+#import essa_clipboardDateConvert
 
 from Tkinter import Tk, Button, Label, W, Checkbutton, Entry, IntVar
 import tkSimpleDialog
@@ -68,11 +68,12 @@ class IssueDialog(tkSimpleDialog.Dialog):
         self.b = Checkbutton(top, text="Debug?", variable= self.var, onvalue = 1, offvalue = 0)
         self.b.grid(row=3, columnspan=2, sticky=W)
         
-        def callConvert():
-            essa_clipboardDateConvert.convert()
+        #def callConvert():
+            #essa_clipboardDateConvert.convert()
+
         
-        self.convertButton = Button(top, text="Convert clipboard date", command=callConvert)
-        self.convertButton.grid(row=4, columnspan=2, sticky=W)
+        #self.convertButton = Button(top, text="Convert clipboard date", command=callConvert)
+        #self.convertButton.grid(row=4, columnspan=2, sticky=W)
 
 
 

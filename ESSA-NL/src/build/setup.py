@@ -184,7 +184,7 @@ setup(
     # The lib directory contains everything except the executables and the python dll.
     zipfile = zipfile,
     description = 'Fetch newsletter contents from Google spreadsheets and convert to HTML.',
-    version = '1.0',
+    version = '1.1',
     windows = [
                   {
                       'script': '../essa_complete.py',

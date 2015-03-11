@@ -19,21 +19,22 @@ import essa_formatConferencesAttendance
 
 from Tkinter import Tk, Button, Label, W, Checkbutton, Entry, IntVar
 import tkSimpleDialog
+import tkMessageBox
 import os
 import sys
 
 from essa_config import workingDir, logDir, user, sourceDir
 
-logginDir = logDir
+loggingDir = logDir
 
-if (not os.path.exists(logDir)):
-    os.makedirs(logDir)
-    
-if (not os.path.exists(logDir)):
-    logginDir = os.path.expanduser('~'), 'Desktop'
-
-sys.stdout = open(os.path.join(logginDir) + "\\essa-nl.log", "w")
-sys.stderr = open(os.path.join(logginDir) + "\\essa-nl.log", "w")
+if (not os.path.exists(loggingDir)):
+    try:
+        os.makedirs(loggingDir)
+    except IOError:
+        loggingDir = '~/Desktop'
+        
+sys.stdout = open(os.path.join(os.path.expanduser(loggingDir)) + "\\essa-nl.log", "w")
+sys.stderr = open(os.path.join(os.path.expanduser(loggingDir)) + "\\essa-nl.log", "w")
 
 password=""
 issue = ""
@@ -98,54 +99,61 @@ d = IssueDialog(root)
 
 if (issue != ""):
 
-    print "Processing issue", issue
-    
-    # create working dir if not existing:
-    if not os.path.exists(workingDir):
-        os.makedirs(workingDir)
-    
-    # open target file
-    outputFile =  workingDir + issue + "/Newsletter.html"
-    if (not os.path.exists(workingDir + issue)):
-        os.makedirs(workingDir + issue)
-    
-    outFile = open(outputFile, "w")
-    
-    # copy preface etc.:
-    inputFile = sourceDir + issue + "/content.html"
-    if (os.path.exists(sourceDir + issue)):
+    try:
+        print "Processing issue", issue
+        
+        # create working dir if not existing:
+        if not os.path.exists(workingDir):
+            os.makedirs(workingDir)
+        
+        # open target file
+        outputFile =  workingDir + issue + "/Newsletter.html"
+        if (not os.path.exists(workingDir + issue)):
+            os.makedirs(workingDir + issue)
+        
+        outFile = open(outputFile, "w")
+        
+        # copy preface etc.:
         inputFile = sourceDir + issue + "/content.html"
-    else:
-        inputFile = sourceDir + "general" + "/content.html"
-    infile = open(inputFile, 'r')
-    input =  infile.readline()
-    while input != "":
-        outFile.write(input)
-        input = input =  infile.readline()
-    outFile.close()
-    
-    # generate parts:
-    essa_formatNews.format(outputFile, issue, workingDir, user, password, debug, chapNum)
-    
-    essa_formatPublications.format(outputFile, issue, workingDir, user, password, debug, chapNum + 1)
-    
-    essa_formatJobs.format(outputFile, issue, workingDir, user, password, debug, chapNum + 2)
-    
-    essa_formatConferences.format(outputFile, issue, workingDir, user, password, debug, chapNum + 3)
-    
-    essa_formatConferencesAttendance.format(outputFile, issue, workingDir, user, password, debug, chapNum + 4)
-    
-    # copy footer:
-    if (os.path.exists(sourceDir + issue)):
-        inputFile = sourceDir + issue + "/footer.html"
-    else:
-        inputFile = sourceDir + "general" + "/footer.html"
-    infile = open(inputFile, 'r')
-    input =  infile.readline()
-    outFile = open(outputFile, "a")
-    while input != "":
-        outFile.write(input)
-        input = input =  infile.readline()
-    
-    outFile.close()
-    print "Issue", issue, "done."
+        if (os.path.exists(sourceDir + issue)):
+            inputFile = sourceDir + issue + "/content.html"
+        else:
+            inputFile = sourceDir + "general" + "/content.html"
+        infile = open(inputFile, 'r')
+        input =  infile.readline()
+        while input != "":
+            outFile.write(input)
+            input = input =  infile.readline()
+        outFile.close()
+        
+        # generate parts:
+        essa_formatNews.format(outputFile, issue, workingDir, user, password, debug, chapNum)
+        
+        essa_formatPublications.format(outputFile, issue, workingDir, user, password, debug, chapNum + 1)
+        
+        essa_formatJobs.format(outputFile, issue, workingDir, user, password, debug, chapNum + 2)
+        
+        essa_formatConferences.format(outputFile, issue, workingDir, user, password, debug, chapNum + 3)
+        
+        essa_formatConferencesAttendance.format(outputFile, issue, workingDir, user, password, debug, chapNum + 4)
+        
+        # copy footer:
+        if (os.path.exists(sourceDir + issue)):
+            inputFile = sourceDir + issue + "/footer.html"
+        else:
+            inputFile = sourceDir + "general" + "/footer.html"
+        infile = open(inputFile, 'r')
+        input =  infile.readline()
+        outFile = open(outputFile, "a")
+        while input != "":
+            outFile.write(input)
+            input = input =  infile.readline()
+        
+        outFile.close()
+        print "Issue", issue, "done."
+        tkMessageBox.showinfo("ESSA-NL", "Issue " + issue + " done. Files stored to " + workingDir + issue + ".")
+    except:
+        print "Unexpected error:", sys.exc_info()[0]
+        tkMessageBox.showinfo("ESSA-NL", "Error occurred! See log file:" + str(sys.exc_info()[0]))
+        raise
+        

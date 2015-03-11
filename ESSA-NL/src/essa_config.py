@@ -17,9 +17,9 @@ if not os.path.isfile(configFile):
     print "File " + configFile + " not found!"
 
 
-workingDir = config.get("basic","destination")
-sourceDir = config.get("basic","sourceDir")
-logDir = config.get("basic","logDir")
+workingDir = os.path.expanduser(config.get("basic","destination") + "/")
+sourceDir = os.path.expanduser(config.get("basic","sourceDir") + "/")
+logDir = os.path.expanduser(config.get("basic","logDir"))
 
 user=config.get("basic","username")
 
